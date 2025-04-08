@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Feedback Collector</title>
+    <link rel="stylesheet" href="/static/styles.css"
+</head>
+<body>
+    <h1>All Feedback</h1>
+    <a href="/submit">Leave Feedback</a>
+    <ui>
+        {% for name, message in feedbacks %}
+        <li><strong>{{ name }}</strong>: {{ message }}</li>
+        {% endfor %}
+    </ui>
+</body>
+</html>
